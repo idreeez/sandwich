@@ -1,0 +1,60 @@
+@font-face {
+	font-family: 'MonsRegular'; 
+	src: url(../fonts/Montserrat-Regular.ttf); 
+}
+@font-face {
+	font-family: 'MonsBold'; 
+	src: url(../fonts/Montserrat-Bold.ttf); 
+}
+*::selection{
+	background: rgba(255, 255, 255, 0);
+	color: white;
+}
+body{
+    font-family: 'MonsRegular';
+    color: white;
+}
+#btn-back-to-top { /*ВВЕРХ*/
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+.mainpage {
+    background: linear-gradient(225deg, rgba(207,138,108,1) 16%, rgba(137,78,53,1) 100%, rgb(240, 172, 143) 16%, rgb(172, 102, 73) 16%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+.btn-hover:hover {
+    box-shadow: 0 4px 15px 0 rgba(255, 255, 255, 0.75);
+}
+.nav-link:hover {
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+.advantages {
+    background: rgb(207,138,108);
+    background: linear-gradient(225deg, rgb(145, 145, 145) 16%, rgb(73, 73, 73) 100%);
+}
+.goods {
+    background: rgb(207,138,108);
+    background: linear-gradient(500deg, rgba(137,78,53,1) 16%, rgba(207,138,108,1) 100%);
+}
+.goods .card:hover{
+    box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.75);
+    transition: 0.5s, 0.5s;
+}
+.gallery {
+    background: rgb(207,138,108);
+    background: linear-gradient(225deg, rgb(145, 145, 145) 16%, rgb(73, 73, 73) 100%);
+}
